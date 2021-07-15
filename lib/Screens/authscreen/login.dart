@@ -67,7 +67,7 @@ class _LoginState extends State<Login> {
                           }
                         });
                       },
-                      child: Text('Create Account'),
+                      child: Text('Login'),
                     ),
                     SizedBox(
                       height: 20,

@@ -46,22 +46,65 @@ class _HomePageState extends State<HomePage> {
                   })
             ],
           ),
-          body: ListView(
-            children: <Widget>[
-              Image.asset('assets/cool.png'),
-              Text(
-                'True North Seafood',
-                style: GoogleFonts.raleway(
-                    textStyle: Theme.of(context).textTheme.headline4,
-                    fontWeight: FontWeight.normal),
-              ),
-              Text(
-                "A little history: \n There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. ",
-                style: GoogleFonts.raleway(
-                    textStyle: Theme.of(context).textTheme.headline6,
-                    fontWeight: FontWeight.normal),
-              ),
-            ],
+          body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ListView(
+              children: [
+                Image.asset('assets/cool.png'),
+                Center(
+                  child: Text(
+                    'Recipe of the Day!',
+                    style: GoogleFonts.raleway(
+                        textStyle: Theme.of(context).textTheme.headline5,
+                        fontWeight: FontWeight.normal),
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    'True North Seafood',
+                    style: GoogleFonts.raleway(
+                        textStyle: Theme.of(context).textTheme.headline4,
+                        fontWeight: FontWeight.normal),
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    "A little history.",
+                    style: GoogleFonts.raleway(
+                        textStyle: Theme.of(context).textTheme.headline6,
+                        fontWeight: FontWeight.normal),
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    " There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+                    style: GoogleFonts.raleway(
+                        textStyle: Theme.of(context).textTheme.headline6,
+                        fontWeight: FontWeight.normal),
+                  ),
+                ),
+                Text(
+                  '''
+                   \n INGREDIENTS: 
+                  \n  4 6-ounce skinned salmon fillets 
+                  \n Salt and black pepper 
+                  \n 1 tablespoon ground coriander 
+                  \n ¼ teaspoon ground cloves 
+                  \n 1 ½ teaspoons ground cumin
+                  \n 1 teaspoon freshly grated nutmeg
+                  \n 2 tablespoons peanut oil, grape seed or other neutral oil, or clarified butter
+                  \n DIRECTIONS:
+                  \n 1.Season fillets with salt and pepper. 
+                  \n 2.Combine spices and press on top of each fillet.
+                  \n 3.Heat oil until shimmering, then add salmon, spice side down.
+                  \n 4.Cook for 2-3 minutes on each sides.
+                  \n 5.RELAX.''',
+                  style: GoogleFonts.raleway(
+                      textStyle: Theme.of(context).textTheme.headline6,
+                      fontWeight: FontWeight.normal),
+                ),
+              ],
+            ),
           )),
     );
   }

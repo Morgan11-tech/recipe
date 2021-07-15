@@ -16,9 +16,6 @@ class AuthClass {
       } else if (e.code == 'email-already-in-use') {
         return 'The account already exists for that email.';
       }
-    } catch (e) {
-      print(e);
-      rethrow;
     }
   }
 
@@ -34,8 +31,6 @@ class AuthClass {
       } else if (e.code == 'wrong-password') {
         return 'Wrong password provided for that user.';
       }
-    } catch (e) {
-      return 'Unknown Error.'; // Change this to whatever you want.
     }
   }
 
