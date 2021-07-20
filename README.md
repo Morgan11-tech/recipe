@@ -1,6 +1,7 @@
 # recipe_app2
 
 A new Flutter project.
+This is my first flutter with firebase project. In this project, I will add firebase auth and user will be able to signup with an email and password, login and reset if they've forgotten their email and password.
 
 ## Getting Started
 
